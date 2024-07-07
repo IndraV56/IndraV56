@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.6.4.1 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;The Edge Tech Store&lt;/title&gt;
+    &lt;style&gt;
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap');
+        
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff8c00;
+            color: #fff;
+            padding: 1.5em 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid #333;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        main {
+            padding: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+        }
+        .product {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1em;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 2em);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 0.5em 0;
+            font-size: 1.25em;
+            color: #007bff;
+        }
+        .cart-item {
+            display: flex;
+            gap: 1em;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1em;
+            margin-bottom: 1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .cart-item img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .cart-total {
+            text-align: right;
+            margin-top: 2em;
+            color: #007bff;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.75em 1.5em;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #ff8c00;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em 0;
+            margin-top: 2em;
+            border-top: 1px solid #333;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .hero img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 1em;
+        }
+        .hero button {
+            margin-top: 1em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.75em 1.5em;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.2s;
+        }
+        .hero button:hover {
+            background-color: #555;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;&lt;img src=&quot;https://via.placeholder.com/50x50.png?text=Logo&quot; alt=&quot;Logo&quot;&gt; The Edge Tech Store&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+            &lt;a href=&quot;#products&quot;&gt;Products&lt;/a&gt;
+            &lt;a href=&quot;#cart&quot;&gt;Cart&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main id=&quot;home&quot;&gt;
+        &lt;div class=&quot;hero&quot;&gt;
+            &lt;img src=&quot;https://dummyimage.com/1200x400/ff8c00/ffffff&amp;text=Welcome+to+The+Edge+Tech+Store&quot; alt=&quot;Welcome&quot;&gt;
+            &lt;p&gt;Discover cutting-edge technology products at the best prices.&lt;/p&gt;
+            &lt;button&gt;Shop Now&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+    &lt;main id=&quot;products&quot;&gt;
+        &lt;h2&gt;Products&lt;/h2&gt;
+        &lt;div class=&quot;product-list&quot;&gt;
+            &lt;div class=&quot;product&quot;&gt;
+                &lt;a href=&quot;product1.html&quot;&gt;
+                    &lt;img src=&quot;https://dummyimage.com/300x200/ff8c00/ffffff&amp;text=Product+1&quot; alt=&quot;Product 1&quot;&gt;
+                    &lt;h3&gt;Product 1&lt;/h3&gt;
+                    &lt;p&gt;$10.00&lt;/p&gt;
+                &lt;/a&gt;
+                &lt;button&gt;Add to Cart&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;product&quot;&gt;
+                &lt;a href=&quot;product2.html&quot;&gt;
+                    &lt;img src=&quot;https://dummyimage.com/300x200/ff8c00/ffffff&amp;text=Product+2&quot; alt=&quot;Product 2&quot;&gt;
+                    &lt;h3&gt;Product 2&lt;/h3&gt;
+                    &lt;p&gt;$20.00&lt;/p&gt;
+                &lt;/a&gt;
+                &lt;button&gt;Add to Cart&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;product&quot;&gt;
+                &lt;a href=&quot;product3.html&quot;&gt;
+                    &lt;img src=&quot;https://dummyimage.com/300x200/ff8c00/ffffff&amp;text=Product+3&quot; alt=&quot;Product 3&quot;&gt;
+                    &lt;h3&gt;Product 3&lt;/h3&gt;
+                    &lt;p&gt;$30.00&lt;/p&gt;
+                &lt;/a&gt;
+                &lt;button&gt;Add to Cart&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;product&quot;&gt;
+                &lt;a href=&quot;product4.html&quot;&gt;
+                    &lt;img src=&quot;https://dummyimage.com/300x200/ff8c00/ffffff&amp;text=Product+4&quot; alt=&quot;Product 4&quot;&gt;
+                    &lt;h3&gt;Product 4&lt;/h3&gt;
+                    &lt;p&gt;$40.00&lt;/p&gt;
+                &lt;/a&gt;
+                &lt;button&gt;Add to Cart&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;product&quot;&gt;
+                &lt;a href=&quot;product5.html&quot;&gt;
+                    &lt;img src=&quot;https://dummyimage.com/300x200/ff8c00/ffffff&amp;text=Product+5&quot; alt=&quot;Product 5&quot;&gt;
+                    &lt;h3&gt;Product 5&lt;/h3&gt;
+                    &lt;p&gt;$50.00&lt;/p&gt;
+                &lt;/a&gt;
+                &lt;button&gt;Add to Cart&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;product&quot;&gt;
+                &lt;a href=&quot;product6.html&quot;&gt;
+                    &lt;img src=&quot;https://dummyimage.com/300x200/ff8c00/ffffff&amp;text=Product+6&quot; alt=&quot;Product 6&quot;&gt;
+                    &lt;h3&gt;Product 6&lt;/h3&gt;
+                    &lt;p&gt;$60.00&lt;/p&gt;
+                &lt;/a&gt;
+                &lt;button&gt;Add to Cart&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+    &lt;main id=&quot;cart&quot;&gt;
+        &lt;h2&gt;Your Cart&lt;/h2&gt;
+        &lt;div class=&quot;cart-item&quot;&gt;
+            &lt;img src=&quot;https://dummyimage.com/100x100/ff8c00/ffffff&amp;text=Product+1&quot; alt=&quot;Product 1&quot;&gt;
+            &lt;div&gt;
+                &lt;h3&gt;Product 1&lt;/h3&gt;
+                &lt;p&gt;Quantity: 1&lt;/p&gt;
+                &lt;p&gt;Price: $10.00&lt;/p&gt;
+                &lt;button&gt;Remove&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;cart-total&quot;&gt;
+            &lt;h3&gt;Total: $10.00&lt;/h3&gt;
+            &lt;button&gt;Checkout&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 The Edge Tech Store&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
